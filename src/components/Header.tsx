@@ -19,7 +19,7 @@ export default function Header() {
             ]}
             wrapper="h1"
             speed={10}
-            className="text-5xl md:text-7xl font-extrabold mb-4 text-gray-400"
+            className="text-5xl md:text-7xl font-extrabold mb-4 text-gray-200"
             repeat={Infinity}
           />
           
