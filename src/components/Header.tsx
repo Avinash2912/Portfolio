@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail, FileText } from 'lucide-react';
 export default function Header() {
   return (
     
-        <header className="container mx-auto px-4 py-32 md:py-40 relative overflow-hidden bg-black text-green-600 min-h-[60vh] flex items-center">
+        <header className="container m-8 mx-auto px-4 py-32 md:py-40 relative overflow-hidden bg-black text-green-600 min-h-[60vh] flex items-center">
           <div className="absolute inset-0 bg-black opacity-60"></div>
           <div className="max-w-4xl mx-auto relative text-center z-10 w-full">
             <div className="animate-fadeIn space-y-8">
