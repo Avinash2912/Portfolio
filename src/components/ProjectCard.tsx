@@ -61,7 +61,7 @@ export default function ProjectCard({
               href={siteLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-3 py-1.5 bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 rounded-lg transition-all duration-300 hover:scale-105 text-sm border border-emerald-500/30 hover:border-emerald-400/50"
+              className="flex items-center gap-2 px-3 py-1.5 bg-green-600 hover:bg-emerald-500 text-white rounded-lg transition-all duration-300 hover:scale-105 text-sm border border-emerald-500/30 hover:border-emerald-400/50"
             >
               <ExternalLink className="w-4 h-4" />
               Live Demo
@@ -72,7 +72,7 @@ export default function ProjectCard({
               href={githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-3 py-1.5 bg-blue-500/20 hover:bg-blue-500/30 text-blue-300 rounded-lg transition-all duration-300 hover:scale-105 text-sm border border-blue-500/30 hover:border-blue-400/50"
+              className="flex items-center gap-2 px-3 py-1.5 bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-all duration-300 hover:scale-105 text-sm border border-blue-500/30 hover:border-blue-400/50"
             >
               <Github className="w-4 h-4" />
               Code
