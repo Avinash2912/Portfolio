@@ -12,6 +12,8 @@ interface ProjectCardProps {
   githubLink?: string;
 }
 
+
+
 export default function ProjectCard({ 
   title, 
   tech, 
@@ -20,13 +22,12 @@ export default function ProjectCard({
   siteLink, 
   githubLink 
 }: ProjectCardProps) {
-  // Fallback image URL - using placeholder.com for demo
   const fallbackImage = `https://placehold.co/600x400/1a1a1a/ffffff?text=${title}`;
 
   return (
-    <div className="max-w-[300px] bg-gradient-to-br from-violet-500/10 to-fuchsia-500/10 rounded-xl overflow-hidden border border-violet-500/20 hover:border-fuchsia-500/40 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:shadow-fuchsia-500/10 p-5 m-7">
+    <div className="max-w-[280px]  rounded-xl overflow-hidden border border-cyan-800/30 hover:border-cyan-600/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-500/20 p-2 m-4">
       {/* Image Container */}
-      <div className="w-full h-48 overflow-hidden">
+      <div className="w-full h-48 overflow-hidden rounded-lg">
         <img 
           src={imageUrl || fallbackImage} 
           alt={title} 
@@ -41,15 +42,15 @@ export default function ProjectCard({
       {/* Content Container */}
       <div className="p-4">
         <div className="mb-4">
-          <h3 className="text-xl font-semibold mb-2 text-white group-hover:text-fuchsia-400 transition-colors">
+          <h3 className="text-xl font-semibold mb-2 text-cyan-50 group-hover:text-cyan-300 transition-colors">
             {title}
           </h3>
-          <p className="text-fuchsia-400/90 text-sm font-mono">
+          <p className="text-cyan-400/90 text-sm font-mono">
             {tech}
           </p>
         </div>
 
-        <p className="text-gray-300 mb-6 text-sm line-clamp-3">
+        <p className="text-cyan-100/70 mb-6 text-sm line-clamp-3">
           {description}
         </p>
         
@@ -60,7 +61,7 @@ export default function ProjectCard({
               href={siteLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-3 py-1.5 bg-violet-500/20 hover:bg-violet-500/30 text-violet-300 rounded-lg transition-all duration-300 hover:scale-105 text-sm"
+              className="flex items-center gap-2 px-3 py-1.5 bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 rounded-lg transition-all duration-300 hover:scale-105 text-sm border border-emerald-500/30 hover:border-emerald-400/50"
             >
               <ExternalLink className="w-4 h-4" />
               Live Demo
@@ -71,7 +72,7 @@ export default function ProjectCard({
               href={githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-3 py-1.5 bg-fuchsia-500/20 hover:bg-fuchsia-500/30 text-fuchsia-300 rounded-lg transition-all duration-300 hover:scale-105 text-sm"
+              className="flex items-center gap-2 px-3 py-1.5 bg-blue-500/20 hover:bg-blue-500/30 text-blue-300 rounded-lg transition-all duration-300 hover:scale-105 text-sm border border-blue-500/30 hover:border-blue-400/50"
             >
               <Github className="w-4 h-4" />
               Code
@@ -82,7 +83,6 @@ export default function ProjectCard({
     </div>
   );
 }
-
 
 
 
