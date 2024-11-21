@@ -25,7 +25,7 @@ export default function ProjectCard({
   const fallbackImage = `https://placehold.co/600x400/1a1a1a/ffffff?text=${title}`;
 
   return (
-    <div className="max-w-[280px]  rounded-xl overflow-hidden border border-cyan-800/30 hover:border-cyan-600/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-500/20 p-2 m-4">
+    <div className="max-w-[280px]  rounded-xl overflow-hidden border border-cyan-800/30 hover:border-cyan-600/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-500/20 p-4 m-4">
       {/* Image Container */}
       <div className="w-full h-48 overflow-hidden rounded-lg">
         <img 
