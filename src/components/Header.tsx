@@ -1,11 +1,10 @@
-
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { Github, Linkedin, Mail, FileText } from 'lucide-react';
 
 export default function Header() {
   return (
-    <header className="container mx-auto px-4 py-16 md:py-24 top-10 p-10  relative overflow-hidden text-green-600">
+    <header className="container mx-auto px-4 py-16 md:py-24 top-10 p-10  relative overflow-hidden bg-black text-green-600">
       <div className="absolute inset-0 bg-black opacity-60 "></div>
       <div className="max-w-4xl mx-auto relative text-center z-10">
         <div className="animate-fadeIn space-y-6">
@@ -20,7 +19,7 @@ export default function Header() {
             ]}
             wrapper="h1"
             speed={10}
-            className="text-5xl md:text-7xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r text-cyan-600"
+            className="text-5xl md:text-7xl font-extrabold mb-4 text-gray-400"
             repeat={Infinity}
           />
           
@@ -76,9 +75,3 @@ function SocialLink({ href, icon, label, hoverColor }: SocialLinkProps) {
     </a>
   );
 }
-
-
-
-
-
-
